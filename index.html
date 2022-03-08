@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/fc3d407b03.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="dashboard">
+        <!-- Header -->
+        <header>
+          <h4>Now Playing</h4>
+          <h2>Title</h2>
+        </header>
+        <!-- CD -->
+        <div class="cd">
+          <div
+            class="cd__thumb"
+            style="
+              background-image: url('https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/d/c/c/7/dcc7440794d5ff5d1bd021afd1e079a7.jpg');
+            "
+          ></div>
+        </div>
+
+        <!-- Control -->
+        <div class="control">
+          <div class="btn btn-repeat">
+            <i class="fa-solid fa-rotate-right"></i>
+          </div>
+          <div class="btn btn-prev">
+            <i class="fa-solid fa-backward-step"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <i class="fa-solid fa-pause icon-pause"></i>
+            <i class="fa-solid fa-play icon-play"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="fa-solid fa-forward-step"></i>
+          </div>
+          <div class="btn btn-random">
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+        </div>
+
+        <input
+          type="range"
+          class="progress"
+          id="progress"
+          value="0"
+          step="1"
+          min="0"
+          max="100"
+        />
+
+        <audio src="" id="audio"></audio>
+      </div>
+      <div class="playlist"></div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
